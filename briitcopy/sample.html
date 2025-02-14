@@ -1,0 +1,837 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <style>
+         
+
+      body{
+        text-align: center;
+      }
+
+     
+
+      body{
+        text-align: center;
+    }
+    
+    .logo-title{
+        font-size: 18px;
+      }
+      .nav{
+        
+        background-color:red;
+        margin-top: -10px;
+        margin-right: -10px;
+        margin-left: -10px;
+      }
+    
+      .navbar {
+          display: flex;
+          justify-content: center;
+        }
+        
+        .navbar a {
+          font-size: 16px;
+          color: white;
+          text-align: center;
+          text-decoration: none;
+        }
+        .navlist{
+          display: flex;
+          gap:10px ;
+        }
+        .dropdown {
+          margin: 20px 0;
+          overflow: hidden;
+        }
+        
+        .dropdown .dropbtn {
+          font-size: 16px;  
+          border: none;
+          outline: none;
+          color: white;
+          padding: 14px 16px;
+          background-color: inherit;
+          font-family: inherit;
+          margin: 0;
+        }
+        
+        .navbar a:hover, .dropdown:hover .dropbtn {
+          background-color: red;
+        }
+        
+        .dropdown-content {
+          display: none;
+          position: absolute;
+          background-color: #f9f9f9;
+          min-width: 100px;
+          box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+          z-index: 1;
+        }
+        .dropdown-content a {
+          float: none;
+          color: black;
+          padding: 12px 16px;
+          text-decoration: none;
+          display: block;
+          text-align: left;
+        }
+        
+        .dropdown-content a:hover {
+          background-color: #ddd;
+        }
+        
+        .dropdown:hover .dropdown-content {
+          display: block;
+        }
+        
+        .srch-bar{
+          margin-top: 20px;
+          gap: 10px;
+      }
+      .srch{
+          border: none;
+          background-color: rgba(255, 136, 0, 0.815);
+          padding: 15px;
+      }
+      .srch-bar i{
+          color: #fff;
+          margin-top: 10px;
+      }
+    
+    /*** icons*** */
+    .icons{
+        text-align: center;
+        justify-content: center;
+        justify-items: center;
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+    .icons i{
+        color: #fff;
+        background-color:blue;
+        text-align: right;
+        border-radius: 100px;
+        padding: 14px;
+        margin: 10px 17px;
+    }
+    /* top-section */
+    .top-section{
+        display: flex;
+        justify-content: center;
+        gap: 14%;   
+    }
+    .line-section img{
+        width: 100%;
+        height: 90%;
+    }
+    .news-sec{
+        text-align: center;
+        justify-content: center;
+        justify-items: center;
+    }
+    
+    .news-sec h2{
+        margin-left: 50px;
+        line-height: 30px;
+        position: absolute;
+        top: 24rem;
+    }
+    .writer-bio{
+        font-size: 13px;
+    }
+    /*top-sub-section */
+    .top-sub-section{
+        background-color: green;
+        padding: 10px 30px;
+        height: 250px;
+        border-radius: 10px;
+    }
+    .top-sub-section h2{
+        margin-top: 30px;
+        font-size: 33px;
+    }
+    .sub-sec{
+       margin-top: 70px;
+       display: flex;
+    }
+    .sub-sec p{
+        color: #fff;
+        font-size: 10px;
+    }
+    .sub-sec i{
+        color: #fff;
+        background-color:blue;
+        text-align: left;
+        border-radius: 100px;
+        padding: 10px;
+        margin: 0 10px;
+        
+    }
+    .latest{
+      text-decoration: underline solid green;
+      margin-left: 30px;
+      width: 100px;
+  }
+
+
+
+
+
+
+        .bottom-container{
+            width: 90%;
+            display: flex;
+            text-align: center;
+            justify-content: center;
+            justify-items: center;
+            text-align: left;
+            gap: 10px;
+            margin-left: 120px;
+            
+          }
+         
+          .center-line{
+            justify-content: center;
+            justify-items: center;
+          }
+          .linings{
+            display:flex ;
+            justify-content: center;
+            text-align: center;
+            text-align: left;
+            margin: 20px auto;
+            gap: 20px;
+            
+        }
+        
+        .extend{
+            float: right;
+        }
+        .sub-bottom img{
+            width: 100%;
+            height: 70%;
+        }
+        .sub-bottom img:hover{
+               opacity:0.8 ;
+               
+               
+        }
+        .sub-bottom h4{
+            width: 100%;
+        }
+          
+          
+          
+          /*left-container*/
+          .left-container{
+            position: relative;
+            bottom: 80px;
+          }
+          .tester{
+            text-align: center;
+
+          }
+          .left-bottom{
+            display: flex;
+            margin: 10px 0;
+            gap: 10px;
+            
+          }
+          .left-bottom img{
+            width: 100px;
+            height: 180px;
+            
+          }
+          .hori-line{
+            
+          }
+          .hori{
+            width: 100%;
+            
+          }
+          .middle-news h2{
+            
+              text-decoration: underline solid rgb(4, 172, 228);
+          }
+
+          /*middle-container*/
+          .middle-container{
+            text-align: left;
+          }
+          .middle-container img{
+            width: 100%;
+           
+          }
+          .sub-middle-container{
+             width: 100%;
+          }
+
+          .btn{
+            color: #ffff;
+            background-color: blue;
+            padding: 10px;
+            border: none;
+          }
+          .story-line{
+            text-decoration: underline  solid rgb(5, 136, 180) ;
+          }
+
+
+         .advert{
+
+         }
+
+          .mission-box{
+            color: #ffff;
+            text-align: left;
+            background-color: orangered;
+            padding: 20px;
+            font-size:35px;
+          }
+          .social-icons{
+              color: gray;
+              gap: 30px;
+              margin: 100px 0;
+          }
+          
+          .btn1{
+            color: black;
+            background-color: rgb(255, 187, 0);
+            padding: 15px 25px;
+            border: none;
+          }
+          .payment-icons{
+            margin: 10px 10px;
+            
+        }
+          .newslater-txt{
+            margin: 50px 0;
+          }
+          
+          .srch{
+              width: 20%;
+              padding: 20px 10px;
+              
+          }
+          .btn2{
+            color: black;
+            padding: 22px 30px;
+            background-color: yellow;
+            border: none;
+            
+          }
+          .hrr{
+            margin: 20px 0;
+          }
+          /**bottom-section*/
+          .bottom-section{
+            width: 100%;
+            display: flex;
+            text-align:center;
+            justify-content: center;
+            justify-items: center;
+            font-size: 18px;
+            margin-top: 30px;
+            gap: 30px;
+            
+          }
+          .bottom-box{
+            
+            text-align: left;
+          }
+          .emm{
+            margin-top: 50px;
+          }
+
+          
+          
+          
+
+          @media only screen and (max-width:750px) {
+
+            .top-sub-section{
+              display: none;
+          }
+
+            .bottom-container{
+              justify-content: center;
+              text-align: center;
+              margin: auto 15px;
+              display: flex;
+              flex-wrap: wrap;
+              padding: 0 4px;
+              gap: 10px;
+            }
+           
+            .center-line{
+              justify-content: center;
+              justify-items: center;
+              margin: 0 auto;
+              
+            }
+            .linings{
+              display: flex;
+              flex-wrap: wrap;
+              padding: 0 4px;
+              gap: 10px;
+          }
+            .sub-bottom{
+              justify-content: center;
+              text-align: center;
+              text-align: left;
+            }
+            .left-container{
+              margin-top:7rem ;
+            }
+           .left-bottom{
+            margin: 30px 0;
+           }
+            
+            
+            
+          }
+           
+
+          /*middle-container*/
+
+          .sub-middle-container{
+              
+              text-align: center;
+              justify-content: center;
+              justify-items: center;
+              
+              display: flex;
+              flex-wrap: wrap;
+              padding: 0 4px;
+              gap: 10px;
+          }
+
+
+
+          email-cont{
+            display: flex;
+            
+        }
+
+
+
+
+        /**bottom-section*/
+        .bottom-section{
+           
+        }
+    </style>
+    <header class="nav">
+      <div class="navbar">
+          <div class="logo-title">
+          <p>brittle</p>
+          <p>bettle</p>
+          </div>
+        <div class="navlist">  
+          <div class="dropdown">
+            <button class="dropbtn">Home 
+              <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+              <a href="#">Link 1</a>
+              <a href="#">Link 2</a>
+              <a href="#">Link 3</a>
+            </div>
+          </div>
+          
+          <div class="dropdown">
+            <button class="dropbtn">News 
+              <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+              <a href="#">Link 1</a>
+              <a href="#">Link 2</a>
+              <a href="#">Link 3</a>
+            </div>
+          </div>
+          <div class="dropdown">
+            <button class="dropbtn">Drop 
+              <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+              <a href="#">Link 1</a>
+              <a href="#">Link 2</a>
+              <a href="#">Link 3</a>
+            </div>
+          </div> 
+          <div class="dropdown">
+            <button class="dropbtn">Drop 
+              <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+              <a href="#">Link 1</a>
+              <a href="#">Link 2</a>
+              <a href="#">Link 3</a>
+            </div>
+          </div> 
+          <div class="dropdown">
+            <button class="dropbtn">Drop 
+              <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+              <a href="#">Link 1</a>
+              <a href="#">Link 2</a>
+              <a href="#">Link 3</a>
+            </div>
+          </div> 
+        </div>
+          <div class="srch-bar">
+            <button class="srch">search</button>
+           <i class="fa fa-search"></i>
+         </div>
+        
+      </div>
+  </header>
+</head>
+<body>
+    
+
+
+  <div class="icons">
+    <i class='fa fa-twitter' style='font-size:14px'></i>
+    <i class='fa fa-twitter' style='font-size:14px'></i>
+    <i class='fa fa-twitter' style='font-size:14px'></i>
+</div>
+      <!-- top-section -->
+    <div class="top-section">
+        <div class="line-section">
+            <img src="img2.jpg" alt="">
+            <div class="news-sec">
+                <h2>News<br>
+                   We Can't Wait For Ozors Sokoh's Cookbook<br>
+                    Exploring Nigerian Food<br>
+                    <span class="writer-bio">by Malachy Ugwuoke</span></h2>
+            </div>
+        </div>
+        <div class="top-sub-section">
+            <h2>Accepting<br>Submissions</h2>
+            <div class="sub-sec">
+            <p>send your work directly to our Editoria Team.<br>
+            Read our submission Guildlines</p>
+            <i class="fa fa-angle-right" style="font-size:20px"></i>
+            </div>
+        </div>
+    </div>
+    <h2 class="latest">LATEST</h2>
+
+
+    <div class="bottom-container">
+        <div class="cent-container">
+          <div class="center-line">
+              
+                    <div class="linings">
+                        <div class="sub-bottom">
+                            <img src="img3.jfif" alt="">
+                            <p>BOOK NEWS . <span class="extend">February 07,2025</span></p>
+                            <h4>Uganda Author Goretti Kyomuhendo's New Novel Explore the Dsrk Side of Immigrationn in moderm world today</h4>
+                                <p class="bottom-para">by JAGRAVI DAVE</p>
+                                
+                        </div>
+                     
+                        <div class="sub-bottom">
+                            <img src="img4.jfif" alt="">
+                            <p>BOOK NEWS . <span class="extend">February 07,2025</span></p>
+                            <h4>New Memoir by Late Ex-Wife of Legendary Afrobeats Pioneer Fela Kuti Sheds Light on Their Famous Relationship</h4>
+                                    <p class="bottom-para">by JAGRAVI DAVE</p>
+                                
+                        </div>
+                    </div>
+                    <div class="linings">
+                        <div class="sub-bottom">
+                            <img src="img3.jfif" alt="">
+                            <p>BOOK NEWS . <span class="extend">February 07,2025</span></p>
+                            <h4>Voices from the Continent: The Importance of Reading
+                              African Literature | Delina Yemane Dawit | Essay</h4>
+                                <p class="bottom-para">by JAGRAVI DAVE</p>
+                        </div>
+                        <div class="sub-bottom">
+                            <img src="img4.jfif" alt="">
+                            <p>BOOK NEWS . <span class="extend">February 07,2025</span></p>
+                            <h4>Voices from the Continent: The Importance of Reading
+                                African Literature | Delina Yemane Dawit | Essay</h4>
+                            <p class="bottom-para">by JAGRAVI DAVE</p>
+                        </div>
+                    </div>
+            
+                    <div class="linings">
+                        <div class="sub-bottom">
+                            <img src="img3.jfif" alt="">
+                            <p>BOOK NEWS  <span class="extend">February 07,2025</span></p>
+                            <h4>Swedish Sociologist Studies Learning and Unlearning
+                                Gender in Postcolonial Tanzania Through Domestic<br>
+                                  Work</h4>
+                            <p class="bottom-para">by JAGRAVI DAVE</p>
+                        </div>
+                        <div class="sub-bottom">
+                            <img src="img4.jfif" alt="">
+                            <p>BOOK NEWS . <span class="extend">February 07,2025</span></p>
+                            <h4>Join Egyptian Author Samia Mehrez for a Live Discussion of Her New Book: The Many Lives of Ibrahim Nagui</h4>
+                                <p class="bottom-para">by JAGRAVI DAVE</p>
+                        </div>
+                    </div>
+                    <div class="linings">
+                        <div class="sub-bottom">
+                            <img src="img3.jfif" alt="">
+                            <p>BOOK NEWS . <span class="extend">February 07,2025</span></p>
+                            <h4>Voices from the Continent: The Importance of Reading African Literature | Delina Yemane Dawit | Essay</h4>
+                            <p class="bottom-para">by JAGRAVI DAVE</p>
+                        </div>
+                        <div class="sub-bottom">
+                            <img src="img4.jfif" alt="">
+                            <p>BOOK NEWS . <span class="extend">February 07,2025</span></p>
+                            <h4>Voices from the Continent: The Importance of Reading African Literature | Delina Yemane Dawit | Essay</h4>
+                            <p class="bottom-para">by JAGRAVI DAVE</p>
+                        </div>
+                    </div>
+
+                    <hr class="hori">
+
+                    <div class="middle-news">
+                      <b><h2>NEWS</h2></b>
+                      </div>
+
+                    <div class="middle-container">
+                      <img src="img2.jpg" alt="">
+                      <p>BOOK NEWS . <span class="extend">February 07,2025</span></p>
+                      <h4>New Memoir by Late Ex-Wife of Legendary Afrobeats Pioneer Fela Kuti Sheds Light on Their Famous Relationship</h4>
+                      <p class="bottom-para">by JAGRAVI DAVE</p>
+                   </div>
+
+                   <div class="sub-middle-container">
+                    <div class="center-line">
+                          
+                      <div class="linings">
+                          <div class="sub-bottom">
+                              <img src="img3.jfif" alt="">
+                              <p>BOOK NEWS . <span class="extend">February 07,2025</span></p>
+                              <h4>Uganda Author Goretti Kyomuhendo's New Novel Explore the Dsrk Side of Immigrationn in moderm world today</h4>
+                                  <p class="bottom-para">by JAGRAVI DAVE</p>
+                                  
+                          </div>
+                       
+                          <div class="sub-bottom">
+                              <img src="img4.jfif" alt="">
+                              <p>BOOK NEWS . <span class="extend">February 07,2025</span></p>
+                              <h4>New Memoir by Late Ex-Wife of Legendary Afrobeats Pioneer Fela Kuti Sheds Light on Their Famous Relationship</h4>
+                                      <p class="bottom-para">by JAGRAVI DAVE</p>
+                                  
+                          </div>
+                      </div>
+                      <div class="linings">
+                          <div class="sub-bottom">
+                              <img src="img3.jfif" alt="">
+                              <p>BOOK NEWS . <span class="extend">February 07,2025</span></p>
+                              <h4>Voices from the Continent: The Importance of Reading
+                                African Literature | Delina Yemane Dawit | Essay</h4>
+                                  <p class="bottom-para">by JAGRAVI DAVE</p>
+                          </div>
+                          <div class="sub-bottom">
+                              <img src="img4.jfif" alt="">
+                              <p>BOOK NEWS . <span class="extend">February 07,2025</span></p>
+                              <h4>Voices from the Continent: The Importance of Reading
+                                  African Literature | Delina Yemane Dawit | Essay</h4>
+                              <p class="bottom-para">by JAGRAVI DAVE</p>
+                          </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="btn-class">
+                    <hr class="hori">
+                    <button class="btn">VIEW NEWS</button>
+                  </div>
+            
+                  <h3 class="story-line">STORIES & POEMS</h3>
+            
+                  <div class="middle-container">
+                    <img src="img2.jpg" alt="">
+                    <p>BOOK NEWS . <span class="extend">February 07,2025</span></p>
+                    <h4>New Memoir by Late Ex-Wife of Legendary Afrobeats Pioneer Fela Kuti Sheds Light on Their Famous Relationship</h4>
+                    <p class="bottom-para">by JAGRAVI DAVE</p>
+                 </div>
+            
+                <div class="sub-middle-container">
+                    <div class="center-line">
+                          
+                      <div class="linings">
+                          <div class="sub-bottom">
+                              <img src="img3.jfif" alt="">
+                              <p>BOOK NEWS . <span class="extend">February 07,2025</span></p>
+                              <h4>Uganda Author Goretti Kyomuhendo's New Novel Explore the Dsrk Side of Immigrationn in moderm world today</h4>
+                                  <p class="bottom-para">by JAGRAVI DAVE</p>
+                                  
+                          </div>
+                      
+                          <div class="sub-bottom">
+                              <img src="img4.jfif" alt="">
+                              <p>BOOK NEWS . <span class="extend">February 07,2025</span></p>
+                              <h4>New Memoir by Late Ex-Wife of Legendary Afrobeats Pioneer Fela Kuti Sheds Light on Their Famous Relationship</h4>
+                                      <p class="bottom-para">by JAGRAVI DAVE</p>
+                                  
+                          </div>
+                      </div>
+                      <div class="linings">
+                          <div class="sub-bottom">
+                              <img src="img3.jfif" alt="">
+                              <p>BOOK NEWS . <span class="extend">February 07,2025</span></p>
+                              <h4>Voices from the Continent: The Importance of Reading
+                                African Literature | Delina Yemane Dawit | Essay</h4>
+                                  <p class="bottom-para">by JAGRAVI DAVE</p>
+                          </div>
+                          <div class="sub-bottom">
+                              <img src="img4.jfif" alt="">
+                              <p>BOOK NEWS . <span class="extend">February 07,2025</span></p>
+                              <h4>Voices from the Continent: The Importance of Reading
+                                  African Literature | Delina Yemane Dawit | Essay</h4>
+                              <p class="bottom-para">by JAGRAVI DAVE</p>
+                          </div>
+                      </div>
+                    </div>
+                </div>
+
+                <div>
+                  <hr class="hori">
+                  <button class="btn">VIEW STORIES & POEMS</button>
+                </div>
+          </div>
+        </div>
+        <div class="left-container">
+            <div class="cent-container">
+              <div class="sub-bottom">
+                  <h4 class="tester">TRENDING</h4>
+                  <div class="left-bottom">
+                    <img src="img5.jfif" alt="">
+                      <div class="left-boxx">
+                          <p>NEWS . OPPORTUNITIES</p>
+                          <h3>Have Questions About Getting Your Manuscript Published? Path2Pub Can Help!</h3>
+                      </div>
+                  </div>
+                  <hr class="hori-line">
+                  <div class="left-bottom">
+                      <img src="img5.jfif" alt="">
+                      <div class="left-boxx">
+                          <p>STORIES AND POEMS</p>
+                          <h3>For the Women Who Came Before | Juliet Nnaji | Poetry</h3>
+                          
+                      </div>
+                  </div>
+                  <hr class="hori-line">
+                  <div class="left-bottom">
+                      <img src="img5.jfif" alt="">
+                      <div class="left-boxx">
+                          <p>NEWS</p>
+                          <h3>Cairo International Book Fair Celebrates its 56th Year! | Recap</h3>
+                          
+                      </div>
+                  </div>
+                  <hr class="hori-line">
+                  <div class="left-bottom">
+                      <img src="img5.jfif" alt="">
+                      <div class="left-boxx">
+                          <h5>NEWS OPPRTUNITIES</h5>
+                          <h3>Have Questions About Getting Your Manuscript Published? Path2Pub Can Help!</h3>
+                         
+                      </div>
+                  </div>
+                  <hr class="hori-line">
+                  <div class="left-bottom">
+                      <img src="img5.jfif" alt="">
+                      <div class="left-boxx">
+                          <p>FEATURES NEWS</p>
+                          <h3>What Do Peanuts Have To Do With the Transatlantic Slave Trade? Find Out In This Award-Winning Monograph.</h3>
+                          
+                      </div>
+                  </div>
+                  <hr class="hori-line">
+                  <div class="left-bottom">
+                      <img src="img5.jfif" alt="">
+                      <div class="left-boxx">
+                          <p>Book Experts</p>
+                          <h3>Excerpt: And So I Roar by Abi Daré</h3>
+                          
+                      </div>
+                  </div>
+              </div>
+            </div>
+        </div>
+      </div>
+
+    </div>
+
+    <h3 class="advert">ADVERTISEMENT</h3>
+
+      <div class="mission-box">
+        <h4>OUR MISSION</h4>
+        <P>Brittle Paper cultivates a fun and informative platform for readers who love literature from the African continent.</P>
+      </div>
+       
+      <div class="social-icons">
+        <i class='fa fa-twitter' style='font-size:43px'></i>
+        <i class='fa fa-facebook' style='font-size:43px'></i>
+        <i class='fa fa-instagram' style='font-size:43px'></i>
+      </div>
+      
+        <h1>support Brittle paper</h1>
+        <button class="btn1">DONATE</button>
+
+        <div class="payment-icons">
+           <i class='fa fa-cc-visa' style='font-size:30px'></i>
+            <i class='fa fa-cc-mastercard' style='font-size:30px'></i>
+            <i class='fa fa-cc-amex'  style='font-size:30px'></i>
+            <i class='fa fa-cc-paypal' style='font-size:30px'></i>
+        </div>
+
+        <p class="newslater-txt">sign up to our newslater</p>
+        <div class="email-cont">
+          <input type="box" id="email" class="srch" placeholder="Email Address">
+          <button class="btn2">SIGN UP</button>
+        </div>
+
+        <hr class="bottom-horri">
+        <div class="bottom-section">
+            <div class="bottom-box">
+              <p>lifestyle</p>
+              <p>news</p>
+              <p>Books</p>
+              <p>Original Writings</p>
+              <p>Events</p>
+              <p>Interviews</p>
+            </div>
+
+
+            <div class="bottom-box">
+              <p>The Brittle paper Awards</p>
+              <p>Notable African Books</p>
+              <p>African Literary person of the year</p>
+            </div>
+
+
+            <div class="bottom-box">
+              <p>Courses (Register/Login)</p>
+              <p>My Writing Room</p>
+              <p>Opportunites</p>
+              <p>Submissions</p>
+            </div>
+
+            <div class="bottom-box">
+              <P>About</P>
+              <p>Contact Us</p>
+              <p>The Decade project</p>
+              <p>Guide to African Novels</p>
+            </div>
+        </div>
+        <em class="emm">@2025 Brittle paper</em>
+      
+</body>
+</html>
